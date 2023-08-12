@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API StarWars</title>
+</head>
+<body>
+    <script>
+
+        fetch("https://swapi.dev/api/people/1/")
+        .then(function(response){
+            return response.json()
+        })
+        .then(function(data){
+            console.log(data.name)
+            console.log(data.eye_color)
+            console.log(data.height)
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: rgb(12, 112, 242);
+            color: white;
+        }
+        div{
+            padding: 30px;
+        }
+    </style>
+</head>
+<body id="principal">
+    <div>
+        <h1>Aprendendo DOM</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam eligendi animi quod magnam voluptatibus facere tempora nam provident amet ex natus similique, voluptatem quaerat molestias sequi id praesentium consequatur veritatis?</p>
+        <button>Clique Aqui</button>
+    </div>
+
+    <script>
+
+        //window.document.write("Minha primeira manipulação de DOM")
+        //window.document.querySelector("h1").style.fontSize="50px"
+        var x = window.document.getElementById("principal")
+        x.style.background = "black"
+
+    </script>
+</body>
+</html>

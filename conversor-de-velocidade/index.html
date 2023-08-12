@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conversor de Velocidade</title>
+</head>
+<body>
+    <header>
+        <h1>Conversor de Velocidade</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>Qual a velocidade em Km/h que deseja converter?</p><br>
+            <input type="number" class="form" id="num" placeholder="80"><br>
+
+            <p>
+            <input type="button" value="Calcular" id="botao" onclick="convertSpeed()">
+            </p>
+        </div>
+
+        <div id="resposta">
+            Preencha os valores acima
+        </div>
+    </section>
+    
+    <script src="speedConv.js"></script>
+</body>
+</html>
