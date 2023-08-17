@@ -26,3 +26,13 @@ function Procurar(){
             personSpecie.innerHTML = data.species
         })
 }
+
+function enterBuscar(){
+    document.addEventListener('keydown', (event) => {
+        if(event.key == "Enter"){
+            Procurar();
+        }
+        
+      });
+}
+enterBuscar();
